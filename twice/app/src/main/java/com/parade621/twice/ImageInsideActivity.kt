@@ -3,6 +3,7 @@ package com.parade621.twice
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.ImageView
 import android.widget.Toast
 
@@ -15,7 +16,13 @@ class ImageInsideActivity : AppCompatActivity() {
 
         val getData = intent.getStringExtra("data")
         val memberImage = findViewById<ImageView>(R.id.memberImageArea)
-        //Toast.makeText(this, getData, Toast.LENGTH_SHORT).show()
+        val toast = Toast.makeText(this, getData, Toast.LENGTH_SHORT)
+        toast.show()
+        Handler().postDelayed(Runnable {
+            run(){
+                toast.cancel()
+            }
+        },1000)
 
         // 이제 이미지를 넘어온 데이터를 바탕으로 바꾼다.
         if(getData=="1"){
