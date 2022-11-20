@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         // 1. create navigation
 
         // 2. create Fragments and connect to navigation
+            //2.1 Click button(image) for move to other fragment
 
         // 3. create RecyclerView
 
