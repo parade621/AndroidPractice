@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840303542994",
+    "project_id": "fb-login-test-f9375",
+    "storage_bucket": "fb-login-test-f9375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840303542994:android:5c5d954119cc37eeca230b",
+        "android_client_info": {
+          "package_name": "com.parade621.fb_login_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840303542994-l18m79rj9vtf5jckg1plsf15ssdthl2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxaj-c2yZoGf9MAbajKTV2vphxS8rJ2-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840303542994-l18m79rj9vtf5jckg1plsf15ssdthl2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
