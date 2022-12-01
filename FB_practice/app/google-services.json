@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841875405724",
+    "project_id": "mysampleproject-5f23b",
+    "storage_bucket": "mysampleproject-5f23b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841875405724:android:2cc26f5c83166d4d916659",
+        "android_client_info": {
+          "package_name": "com.parade621.fb_practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841875405724-vjqe0ef0p0t1o8r8t0l34kbi734nh73n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuHpkwfj9dY3jl5jqwTRwYdi0SYt42qvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841875405724-vjqe0ef0p0t1o8r8t0l34kbi734nh73n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
