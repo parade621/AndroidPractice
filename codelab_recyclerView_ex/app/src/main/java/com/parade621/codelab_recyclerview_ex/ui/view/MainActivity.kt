@@ -1,4 +1,4 @@
-package com.parade621.codelab_recyclerview_ex.ui
+package com.parade621.codelab_recyclerview_ex.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
