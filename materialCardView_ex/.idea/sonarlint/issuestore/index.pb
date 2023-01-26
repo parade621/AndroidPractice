@@ -1,11 +1,25 @@
 
+{
+Kapp/src/main/java/com/parade621/materialCardView_ex/ui/view/MainActivity.kt,e\e\ee7ae9b24cd5adf389361bb88c7531ded570cc00
+{
+Kapp/src/main/java/com/parade621/materialCardView_ex/ui/view/MainFragment.kt,9\4\94e9efc7d13c7547c348cd4ee05e0cc7e05039d7
+x
+Happ/src/main/java/com/parade621/materialCardView_ex/model/Affirmation.kt,a\1\a154bf852cd978f471614f7e7ff74b2c93a62cf4
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+?
+settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+F
+app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-|
-Lapp/src/main/java/com/parade621/codelab_recyclerview_ex/model/Affirmation.kt,1\f\1f647bda2bb923d0b932c72e6e513a35e932e402
-z
-Japp/src/main/java/com/parade621/codelab_recyclerview_ex/data/Datasource.kt,e\2\e28f0e2b11bffe6d7296dbdcc8d4a80c004dd6b0
-
-Oapp/src/main/java/com/parade621/codelab_recyclerview_ex/ui/view/MainFragment.kt,8\c\8c4f1629bd98edb71a3818173c1b1f3c0acfcfe0
-
-Oapp/src/main/java/com/parade621/codelab_recyclerview_ex/ui/adapter/RVAdapter.kt,1\9\199f4b755f9954b805c95cbc5def8ed7b84511ad
+v
+Fapp/src/main/java/com/parade621/materialCardView_ex/data/Datasource.kt,b\4\b4a63e395681ee5482d63c6bb1c96408ad8e6684
+{
+Kapp/src/main/java/com/parade621/materialCardView_ex/ui/adapter/RVAdapter.kt,d\a\daa2fba5e9c8696cd942086e24cab0e62a401399

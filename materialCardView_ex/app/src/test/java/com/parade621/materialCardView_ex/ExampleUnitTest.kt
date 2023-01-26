@@ -1,4 +1,4 @@
-package com.parade621.codelab_recyclerview_ex
+package com.parade621.materialCardView_ex
 
 import org.junit.Test
 

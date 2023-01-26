@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "codelab_recyclerView_ex"
+rootProject.name = "materialCardView_ex"
 include ':app'

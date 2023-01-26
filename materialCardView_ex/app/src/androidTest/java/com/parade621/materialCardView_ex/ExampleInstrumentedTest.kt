@@ -1,4 +1,4 @@
-package com.parade621.codelab_recyclerview_ex
+package com.parade621.materialCardView_ex
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

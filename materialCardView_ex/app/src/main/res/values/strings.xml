@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">codelab_recyclerView_ex</string>
+    <string name="app_name">materialCardView_ex</string>
     <string name="affirmation1">I am strong.</string>
     <string name="affirmation2">I believe in myself.</string>
     <string name="affirmation3">Each day is a new opportunity to grow and be a better version of myself.</string>

@@ -14,7 +14,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/main_fc"
-            android:name="com.parade621.codelab_recyclerview_ex.ui.view.MainFragment"
+            android:name="com.parade621.materialCardView_ex.ui.view.MainFragment"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintTop_toTopOf="parent"

@@ -1,9 +1,8 @@
-package com.parade621.codelab_recyclerview_ex.ui.view
+package com.parade621.materialCardView_ex.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.parade621.codelab_recyclerview_ex.R
-import com.parade621.codelab_recyclerview_ex.databinding.ActivityMainBinding
+import com.parade621.materialCardView_ex.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

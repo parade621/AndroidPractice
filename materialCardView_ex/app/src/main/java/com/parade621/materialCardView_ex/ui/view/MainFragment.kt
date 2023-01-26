@@ -1,14 +1,13 @@
-package com.parade621.codelab_recyclerview_ex.ui.view
+package com.parade621.materialCardView_ex.ui.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.parade621.codelab_recyclerview_ex.R
-import com.parade621.codelab_recyclerview_ex.data.Datasource
-import com.parade621.codelab_recyclerview_ex.databinding.FragmentMainBinding
-import com.parade621.codelab_recyclerview_ex.ui.adapter.RVAdapter
+import com.parade621.materialCardView_ex.data.Datasource
+import com.parade621.materialCardView_ex.databinding.FragmentMainBinding
+import com.parade621.materialCardView_ex.ui.adapter.RVAdapter
 
 class MainFragment : Fragment() {
     private var _binding: FragmentMainBinding?= null
