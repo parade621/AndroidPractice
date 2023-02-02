@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/activity_main.xml" value="0.18211752786220872" />
-        <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_accompaniment_menu.xml" value="0.21388888888888888" />
+        <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_accompaniment_menu.xml" value="0.33" />
         <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_checkout.xml" value="0.21388888888888888" />
+        <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_entree_menu.xml" value="0.25" />
+        <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_side_menu.xml" value="0.26646403242147926" />
+        <entry key="..\:/Github/KotlinAndroidPractice/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_start_order.xml" value="0.26646403242147926" />
       </map>
     </option>
   </component>

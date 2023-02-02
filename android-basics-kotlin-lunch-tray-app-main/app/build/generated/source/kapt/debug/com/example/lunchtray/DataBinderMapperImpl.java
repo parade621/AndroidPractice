@@ -10,6 +10,7 @@ import com.example.lunchtray.databinding.FragmentAccompanimentMenuBindingImpl;
 import com.example.lunchtray.databinding.FragmentCheckoutBindingImpl;
 import com.example.lunchtray.databinding.FragmentEntreeMenuBindingImpl;
 import com.example.lunchtray.databinding.FragmentSideMenuBindingImpl;
+import com.example.lunchtray.databinding.FragmentStartOrderBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -29,13 +30,16 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTSIDEMENU = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_FRAGMENTSTARTORDER = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.lunchtray.R.layout.fragment_accompaniment_menu, LAYOUT_FRAGMENTACCOMPANIMENTMENU);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.lunchtray.R.layout.fragment_checkout, LAYOUT_FRAGMENTCHECKOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.lunchtray.R.layout.fragment_entree_menu, LAYOUT_FRAGMENTENTREEMENU);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.lunchtray.R.layout.fragment_side_menu, LAYOUT_FRAGMENTSIDEMENU);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.lunchtray.R.layout.fragment_start_order, LAYOUT_FRAGMENTSTARTORDER);
   }
 
   @Override
@@ -70,6 +74,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentSideMenuBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_side_menu is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTSTARTORDER: {
+          if ("layout/fragment_start_order_0".equals(tag)) {
+            return new FragmentStartOrderBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_start_order is invalid. Received: " + tag);
         }
       }
     }
@@ -116,22 +126,27 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(6);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "viewModel");
+      sKeys.put(1, "accompanimentFragment");
+      sKeys.put(2, "entreeMenueFragment");
+      sKeys.put(3, "sideMenuFragment");
+      sKeys.put(4, "startOrderFragment");
+      sKeys.put(5, "viewModel");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/fragment_accompaniment_menu_0", com.example.lunchtray.R.layout.fragment_accompaniment_menu);
       sKeys.put("layout/fragment_checkout_0", com.example.lunchtray.R.layout.fragment_checkout);
       sKeys.put("layout/fragment_entree_menu_0", com.example.lunchtray.R.layout.fragment_entree_menu);
       sKeys.put("layout/fragment_side_menu_0", com.example.lunchtray.R.layout.fragment_side_menu);
+      sKeys.put("layout/fragment_start_order_0", com.example.lunchtray.R.layout.fragment_start_order);
     }
   }
 }

@@ -73,7 +73,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x4L;
         }
         requestRebind();
     }
@@ -91,7 +91,10 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.viewModel == variableId) {
+        if (BR.sideMenuFragment == variableId) {
+            setSideMenuFragment((com.example.lunchtray.ui.order.SideMenuFragment) variable);
+        }
+        else if (BR.viewModel == variableId) {
             setViewModel((com.example.lunchtray.model.OrderViewModel) variable);
         }
         else {
@@ -100,10 +103,13 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding  {
             return variableSet;
     }
 
+    public void setSideMenuFragment(@Nullable com.example.lunchtray.ui.order.SideMenuFragment SideMenuFragment) {
+        this.mSideMenuFragment = SideMenuFragment;
+    }
     public void setViewModel(@Nullable com.example.lunchtray.model.OrderViewModel ViewModel) {
         this.mViewModel = ViewModel;
         synchronized(this) {
-            mDirtyFlags |= 0x1L;
+            mDirtyFlags |= 0x2L;
         }
         notifyPropertyChanged(BR.viewModel);
         super.requestRebind();
@@ -142,7 +148,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding  {
         com.example.lunchtray.model.OrderViewModel viewModel = mViewModel;
         java.lang.String viewModelMenuItemsRiceGetFormattedPrice = null;
 
-        if ((dirtyFlags & 0x3L) != 0) {
+        if ((dirtyFlags & 0x6L) != 0) {
 
 
 
@@ -198,7 +204,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding  {
                 }
         }
         // batch finished
-        if ((dirtyFlags & 0x3L) != 0) {
+        if ((dirtyFlags & 0x6L) != 0) {
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.potatoDescription, viewModelMenuItemsPotatoesDescription);
@@ -220,8 +226,9 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): viewModel
-        flag 1 (0x2L): null
+        flag 0 (0x1L): sideMenuFragment
+        flag 1 (0x2L): viewModel
+        flag 2 (0x3L): null
     flag mapping end*/
     //end
 }
