@@ -17,7 +17,8 @@
 <!-- Layout for order summary -->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SummaryFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SummaryFragment">
 
     <data>
         <variable
@@ -26,7 +27,7 @@
 
         <variable
             name="summaryFragment"
-            type="com.example.cupcake.SummaryFragment" />
+            type="com.example.cupcake.ui.SummaryFragment" />
     </data>
 
     <ScrollView
@@ -140,6 +141,16 @@
                 android:layout_marginTop="@dimen/side_margin"
                 android:onClick="@{() -> summaryFragment.sendOrder()}"
                 android:text="@string/send" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginTop="16dp"
+                android:onClick="@{()->summaryFragment.cancelOrder()}"
+                />
 
         </LinearLayout>
     </ScrollView>
