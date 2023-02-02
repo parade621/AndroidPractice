@@ -22,17 +22,17 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
     private final android.widget.ScrollView mboundView0;
     // variables
     @Nullable
-    private final android.view.View.OnClickListener mCallback6;
+    private final android.view.View.OnClickListener mCallback11;
     @Nullable
-    private final android.view.View.OnClickListener mCallback2;
+    private final android.view.View.OnClickListener mCallback12;
     @Nullable
-    private final android.view.View.OnClickListener mCallback5;
+    private final android.view.View.OnClickListener mCallback9;
     @Nullable
-    private final android.view.View.OnClickListener mCallback1;
+    private final android.view.View.OnClickListener mCallback8;
     @Nullable
-    private final android.view.View.OnClickListener mCallback4;
+    private final android.view.View.OnClickListener mCallback10;
     @Nullable
-    private final android.view.View.OnClickListener mCallback3;
+    private final android.view.View.OnClickListener mCallback7;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -79,12 +79,12 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
         this.subtotal.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback6 = new com.example.lunchtray.generated.callback.OnClickListener(this, 6);
-        mCallback2 = new com.example.lunchtray.generated.callback.OnClickListener(this, 2);
-        mCallback5 = new com.example.lunchtray.generated.callback.OnClickListener(this, 5);
-        mCallback1 = new com.example.lunchtray.generated.callback.OnClickListener(this, 1);
-        mCallback4 = new com.example.lunchtray.generated.callback.OnClickListener(this, 4);
-        mCallback3 = new com.example.lunchtray.generated.callback.OnClickListener(this, 3);
+        mCallback11 = new com.example.lunchtray.generated.callback.OnClickListener(this, 5);
+        mCallback12 = new com.example.lunchtray.generated.callback.OnClickListener(this, 6);
+        mCallback9 = new com.example.lunchtray.generated.callback.OnClickListener(this, 3);
+        mCallback8 = new com.example.lunchtray.generated.callback.OnClickListener(this, 2);
+        mCallback10 = new com.example.lunchtray.generated.callback.OnClickListener(this, 4);
+        mCallback7 = new com.example.lunchtray.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -302,12 +302,12 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
         if ((dirtyFlags & 0x10L) != 0) {
             // api target 1
 
-            this.cancelButton.setOnClickListener(mCallback5);
-            this.nextButton.setOnClickListener(mCallback6);
-            this.potatoes.setOnClickListener(mCallback3);
-            this.rice.setOnClickListener(mCallback4);
-            this.salad.setOnClickListener(mCallback1);
-            this.soup.setOnClickListener(mCallback2);
+            this.cancelButton.setOnClickListener(mCallback11);
+            this.nextButton.setOnClickListener(mCallback12);
+            this.potatoes.setOnClickListener(mCallback9);
+            this.rice.setOnClickListener(mCallback10);
+            this.salad.setOnClickListener(mCallback7);
+            this.soup.setOnClickListener(mCallback8);
         }
         if ((dirtyFlags & 0x18L) != 0) {
             // api target 1
@@ -343,6 +343,23 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
         switch(sourceId) {
+            case 5: {
+                // localize variables for thread safety
+                // sideMenuFragment != null
+                boolean sideMenuFragmentJavaLangObjectNull = false;
+                // sideMenuFragment
+                com.example.lunchtray.ui.order.SideMenuFragment sideMenuFragment = mSideMenuFragment;
+
+
+
+                sideMenuFragmentJavaLangObjectNull = (sideMenuFragment) != (null);
+                if (sideMenuFragmentJavaLangObjectNull) {
+
+
+                    sideMenuFragment.cancelOrder();
+                }
+                break;
+            }
             case 6: {
                 // localize variables for thread safety
                 // sideMenuFragment != null
@@ -357,6 +374,24 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
 
 
                     sideMenuFragment.goToNextScreen();
+                }
+                break;
+            }
+            case 3: {
+                // localize variables for thread safety
+                // viewModel
+                com.example.lunchtray.model.OrderViewModel viewModel = mViewModel;
+                // viewModel != null
+                boolean viewModelJavaLangObjectNull = false;
+
+
+
+                viewModelJavaLangObjectNull = (viewModel) != (null);
+                if (viewModelJavaLangObjectNull) {
+
+
+
+                    viewModel.setSide("potatoes");
                 }
                 break;
             }
@@ -378,41 +413,6 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
                 }
                 break;
             }
-            case 5: {
-                // localize variables for thread safety
-                // sideMenuFragment != null
-                boolean sideMenuFragmentJavaLangObjectNull = false;
-                // sideMenuFragment
-                com.example.lunchtray.ui.order.SideMenuFragment sideMenuFragment = mSideMenuFragment;
-
-
-
-                sideMenuFragmentJavaLangObjectNull = (sideMenuFragment) != (null);
-                if (sideMenuFragmentJavaLangObjectNull) {
-
-
-                    sideMenuFragment.cancelOrder();
-                }
-                break;
-            }
-            case 1: {
-                // localize variables for thread safety
-                // viewModel
-                com.example.lunchtray.model.OrderViewModel viewModel = mViewModel;
-                // viewModel != null
-                boolean viewModelJavaLangObjectNull = false;
-
-
-
-                viewModelJavaLangObjectNull = (viewModel) != (null);
-                if (viewModelJavaLangObjectNull) {
-
-
-
-                    viewModel.setSide("salad");
-                }
-                break;
-            }
             case 4: {
                 // localize variables for thread safety
                 // viewModel
@@ -431,7 +431,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
                 }
                 break;
             }
-            case 3: {
+            case 1: {
                 // localize variables for thread safety
                 // viewModel
                 com.example.lunchtray.model.OrderViewModel viewModel = mViewModel;
@@ -445,7 +445,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
 
 
 
-                    viewModel.setSide("potatoes");
+                    viewModel.setSide("salad");
                 }
                 break;
             }

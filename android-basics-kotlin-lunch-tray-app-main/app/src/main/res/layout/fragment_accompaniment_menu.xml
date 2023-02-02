@@ -44,6 +44,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["bread"].name}'
+                    android:onClick='@{()->viewModel.setAccompaniment("bread")}'
                     tools:text="Accompaniment 1" />
 
                 <TextView
@@ -72,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["berries"].name}'
+                    android:onClick='@{()->viewModel.setAccompaniment("berries")}'
                     tools:text="Accompaniment 2" />
 
                 <TextView
@@ -103,6 +105,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["pickles"].name}'
+                    android:onClick='@{()->viewModel.setAccompaniment("pickles")}'
                     tools:text="Accompaniment 3" />
 
                 <!-- TODO: set the text to the accompaniment description using the view model -->
@@ -138,11 +141,13 @@
                 style="@style/Widget.LunchTray.TextView.Subtotal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider"
+                android:text="@{@string/subtotal(viewModel.subtotal)}"
                 tools:text="Subtotal $5.00"/>
 
             <!-- TODO: cancel the order when clicked -->
             <Button
                 android:id="@+id/cancel_button"
+                android:onClick="@{()->accompanimentFragment.cancelOrder()}"
                 style="@style/Widget.Order.Button.Cancel"
                 app:layout_constraintEnd_toStartOf="@id/next_button"
                 app:layout_constraintStart_toStartOf="parent"
@@ -151,6 +156,7 @@
             <!-- TODO: go to the next screen when clicked -->
             <Button
                 android:id="@+id/next_button"
+                android:onClick="@{()->accompanimentFragment.goToNextScreen()}"
                 style="@style/Widget.Order.Button.Next"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
