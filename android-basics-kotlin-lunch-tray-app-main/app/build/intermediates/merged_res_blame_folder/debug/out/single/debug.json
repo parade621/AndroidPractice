@@ -44,11 +44,11 @@
         "source": "C:\\Users\\parad\\.gradle\\daemon\\7.4.2\\com.example.lunchtray.app-main-49:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.lunchtray.app-merged_res-47:/layout_fragment_start_order.xml.flat",
-        "source": "com.example.lunchtray.app-main-49:/layout/fragment_start_order.xml"
-    },
-    {
         "merged": "C:\\Users\\parad\\.gradle\\daemon\\7.4.2\\com.example.lunchtray.app-merged_res-47:\\layout_fragment_accompaniment_menu.xml.flat",
         "source": "C:\\Users\\parad\\.gradle\\daemon\\7.4.2\\com.example.lunchtray.app-main-49:\\layout\\fragment_accompaniment_menu.xml"
+    },
+    {
+        "merged": "com.example.lunchtray.app-merged_res-47:/layout_fragment_side_menu.xml.flat",
+        "source": "com.example.lunchtray.app-main-49:/layout/fragment_side_menu.xml"
     }
 ]
