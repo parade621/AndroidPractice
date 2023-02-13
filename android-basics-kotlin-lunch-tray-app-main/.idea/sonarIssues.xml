@@ -83,6 +83,36 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../Toy_Project/RockScissorsPaper/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Toy_Project/RockScissorsPaper/app/build/generated/source/kapt/debug/com/parade621/rockscissorspaper/databinding/FragmentGameBindingImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Toy_Project/RockScissorsPaper/app/src/main/java/com/parade621/rockscissorspaper/model/BindingAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Toy_Project/RockScissorsPaper/app/src/main/java/com/parade621/rockscissorspaper/model/GameViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Toy_Project/RockScissorsPaper/app/src/main/java/com/parade621/rockscissorspaper/ui/GameFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Toy_Project/RockScissorsPaper/app/src/main/res/layout/fragment_game.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

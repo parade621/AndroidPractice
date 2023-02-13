@@ -1,0 +1,21 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+v
+Fapp/src/main/java/com/example/lunchtray/ui/order/StartOrderFragment.kt,a\f\afd11dda500af35fe3b1f3fc94174e8df65b3c49
+t
+Dapp/src/main/java/com/example/lunchtray/ui/order/SideMenuFragment.kt,e\0\e0fdfa24c3a9be755cad39c9cfdc09bf0012033a
+m
+=app/src/main/java/com/example/lunchtray/constants/ItemType.kt,3\c\3caaa5dadab8b8713ce11ab4ebe2c1a7c283cc9d
+j
+:app/src/main/java/com/example/lunchtray/data/DataSource.kt,7\9\798d6829ac495cf11e017124abeafb52655bac54
+}
+Mapp/src/main/java/com/example/lunchtray/ui/order/AccompanimentMenuFragment.kt,e\b\eb5468ef5de309f3cd1c0d9a3697b618e2dae6e5
+t
+Dapp/src/main/java/com/example/lunchtray/ui/order/CheckoutFragment.kt,f\5\f58eb60ee7d25c9df1b8c4d7a39e457da39e94fd
+v
+Fapp/src/main/java/com/example/lunchtray/ui/order/EntreeMenuFragment.kt,3\f\3f2386437a54a08a2cfd4a76d430394cc07a3899
+o
+?app/src/main/java/com/example/lunchtray/model/OrderViewModel.kt,b\4\b4d18be71caa5b2f9f0e5ae4857337451153d4c0
+i
+9app/src/main/java/com/example/lunchtray/model/MenuItem.kt,2\4\2474497ed04d773fb35064abf77ebddc4bb49810
